@@ -77,7 +77,7 @@ public class MyProject1Application {
 		docteurs.add(doc_13);
 
 		if (number == 0 || number > 13) {
-			throw new DoctorNotFoundException("Impossible de récupérer l'incarnation <numéro de l'incarnation>");
+			throw new DoctorNotFoundException("Impossible de récupérer l'incarnation" + number);
 		}
 		if (number < 9 && details == false) {
 			throw new DoctorFoundException("Not Doctor");
